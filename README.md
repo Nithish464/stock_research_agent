@@ -26,3 +26,12 @@ uvicorn app:app --reload
 ```
 
 ## 📁 Project Structure
+├── agent.py      # LangChain agent setup & reasoning logic
+├── tools.py      # Custom tools (price fetch, news, analysis)
+├── memory.py     # Conversation memory management
+├── app.py        # FastAPI endpoints
+└── requirements.txt
+
+## 💡 Example Usage
+User: "Research Infosys stock and give me a buy/sell recommendation"
+Agent: Fetches live price → Analyzes technicals → Checks recent news → Returns recommendation
